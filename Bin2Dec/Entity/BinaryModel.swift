@@ -9,7 +9,7 @@ import Foundation
 
 struct Binary {
     
-    var numeral = 0
+    var numeral = "0"
     
     func convertToDecimal() -> Int {
         return 0

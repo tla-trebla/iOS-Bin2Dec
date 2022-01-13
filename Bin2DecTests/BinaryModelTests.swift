@@ -19,8 +19,8 @@ class BinaryModelTests: XCTestCase {
     
     func test_UpdateNumericValue_ShouldHaveCorrectDecimal() {
         
-        let sut = Binary()
-        sut.updateNumeric(10)
+        var sut = Binary()
+        sut.updateNumeric("10")
         
         XCTAssertEqual(sut.convertToDecimal(), 2)
     }
