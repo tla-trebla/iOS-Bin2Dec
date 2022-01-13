@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var presenter: ConvertBinaryToDecimalPresenterInputProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,3 +19,14 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: - Presenter Output to View (Presenter -> View)
+extension ViewController: ConvertBinaryToDecimalViewProtocol {
+    
+    func showDecimal(decimal: Int) {
+        <#code#>
+    }
+    
+    func showError(message: String) {
+        <#code#>
+    }
+}
