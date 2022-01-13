@@ -9,6 +9,7 @@ import Foundation
 
 protocol ConvertBinaryToDecimalPresenterOutputProtocol {
     func presentDecimal(response decimal: Int)
+    func presentFailure(message: String)
 }
 
 protocol ConvertBinaryToDecimalInteractorProtocol {
