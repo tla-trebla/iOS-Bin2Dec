@@ -12,7 +12,7 @@ class ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterInputProto
     
     var view: ConvertBinaryToDecimalViewProtocol?
     var interactor: ConvertBinaryToDecimalInteractorProtocol?
-    var router: ConvertBinaryToDecimalRouter?
+    var router: ConvertBinaryToDecimalRouterProtocol?
     
     func presentConvertBinaryToDecimal(_ request: String) {
         interactor?.convertBinary(request)

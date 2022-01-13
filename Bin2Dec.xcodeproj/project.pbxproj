@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E7903D22790B8180096D91F /* ConvertBinaryToDecimalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7903D12790B8180096D91F /* ConvertBinaryToDecimalRouter.swift */; };
 		5EA2833327906C9000BC44BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2833227906C9000BC44BB /* AppDelegate.swift */; };
 		5EA2833527906C9000BC44BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2833427906C9000BC44BB /* SceneDelegate.swift */; };
 		5EA2833727906C9000BC44BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2833627906C9000BC44BB /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E7903D12790B8180096D91F /* ConvertBinaryToDecimalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalRouter.swift; sourceTree = "<group>"; };
 		5EA2832F27906C9000BC44BB /* Bin2Dec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bin2Dec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA2833227906C9000BC44BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA2833427906C9000BC44BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				5EEF3F7F27907D120031969D /* ConvertBinaryToDecimalInteractor.swift */,
 				5EEF3F882790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift */,
 				5EA2834627906CD600BC44BB /* View */,
+				5E7903D12790B8180096D91F /* ConvertBinaryToDecimalRouter.swift */,
 			);
 			path = ConvertBinaryToDecimal;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				5EEF3F8027907D120031969D /* ConvertBinaryToDecimalInteractor.swift in Sources */,
 				5EA2833527906C9000BC44BB /* SceneDelegate.swift in Sources */,
 				5EEF3F892790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift in Sources */,
+				5E7903D22790B8180096D91F /* ConvertBinaryToDecimalRouter.swift in Sources */,
 				5EEF3F8227907D230031969D /* ConvertBinaryToDecimalProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

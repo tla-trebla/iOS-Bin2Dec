@@ -11,7 +11,7 @@ protocol ConvertBinaryToDecimalPresenterInputProtocol {
     
     var view: ConvertBinaryToDecimalViewProtocol? { get set }
     var interactor: ConvertBinaryToDecimalInteractorProtocol? { get set }
-    var router: ConvertBinaryToDecimalRouter? { get set }
+    var router: ConvertBinaryToDecimalRouterProtocol? { get set }
     
     func presentConvertBinaryToDecimal(_ request: String)
 }
@@ -21,7 +21,7 @@ protocol ConvertBinaryToDecimalViewProtocol {
     func showError(message: String)
 }
 
-protocol ConvertBinaryToDecimalRouter {
+protocol ConvertBinaryToDecimalRouterProtocol {
     func createModule() -> ViewController
 }
 
