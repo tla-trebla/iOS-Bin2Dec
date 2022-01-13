@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum BinaryError: Error {
+    case invalidNumeral
+    case invalidInput
+}
+
 struct Binary {
     
     var numeral = "0"
@@ -26,7 +31,19 @@ struct Binary {
         return result
     }
     
-    mutating func updateNumeric(_ value: String) {
+    mutating func updateNumeral(_ value: String) throws {
+        
+        guard var input = Int(value) else {
+            throw BinaryError.invalidInput
+        }
+        
+        while input != 0 {
+            if input % 10 > 1 {
+                throw BinaryError.invalidNumeral
+            }
+            input /= 10
+        }
+        
         self.numeral = value
     }
 }
