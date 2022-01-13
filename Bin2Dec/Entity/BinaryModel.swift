@@ -10,6 +10,7 @@ import Foundation
 enum BinaryError: Error {
     case invalidNumeral
     case invalidInput
+    case inputTooLong
 }
 
 struct Binary {
@@ -32,6 +33,10 @@ struct Binary {
     }
     
     mutating func updateNumeral(_ value: String) throws {
+        
+        guard value.count < 9 else {
+            throw BinaryError.inputTooLong
+        }
         
         guard var input = Int(value) else {
             throw BinaryError.invalidInput
