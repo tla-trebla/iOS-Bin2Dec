@@ -15,6 +15,7 @@
 		5EA2833F27906C9200BC44BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA2833D27906C9200BC44BB /* LaunchScreen.storyboard */; };
 		5EA2835027906D2400BC44BB /* BinaryModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */; };
 		5EA2835827906E0C00BC44BB /* BinaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2835727906E0C00BC44BB /* BinaryModel.swift */; };
+		5EEF3F7D279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F7C279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		5EA2834D27906D2400BC44BB /* Bin2DecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bin2DecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryModelTests.swift; sourceTree = "<group>"; };
 		5EA2835727906E0C00BC44BB /* BinaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryModel.swift; sourceTree = "<group>"; };
+		5EEF3F7C279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */,
+				5EEF3F7C279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift */,
 			);
 			path = Bin2DecTests;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEF3F7D279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift in Sources */,
 				5EA2835027906D2400BC44BB /* BinaryModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
