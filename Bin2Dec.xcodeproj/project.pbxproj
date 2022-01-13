@@ -14,6 +14,7 @@
 		5EA2833C27906C9200BC44BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA2833B27906C9200BC44BB /* Assets.xcassets */; };
 		5EA2833F27906C9200BC44BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA2833D27906C9200BC44BB /* LaunchScreen.storyboard */; };
 		5EA2835027906D2400BC44BB /* BinaryModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */; };
+		5EA2835827906E0C00BC44BB /* BinaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2835727906E0C00BC44BB /* BinaryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		5EA2834027906C9200BC44BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EA2834D27906D2400BC44BB /* Bin2DecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bin2DecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryModelTests.swift; sourceTree = "<group>"; };
+		5EA2835727906E0C00BC44BB /* BinaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		5EA2833127906C9000BC44BB /* Bin2Dec */ = {
 			isa = PBXGroup;
 			children = (
+				5EA2835627906E0500BC44BB /* Entity */,
 				5EA2834727906CE600BC44BB /* Application */,
 				5EA2834627906CD600BC44BB /* View */,
 				5EA2834827906CF000BC44BB /* Other */,
@@ -119,6 +122,14 @@
 				5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */,
 			);
 			path = Bin2DecTests;
+			sourceTree = "<group>";
+		};
+		5EA2835627906E0500BC44BB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5EA2835727906E0C00BC44BB /* BinaryModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 			files = (
 				5EA2833727906C9000BC44BB /* ViewController.swift in Sources */,
 				5EA2833327906C9000BC44BB /* AppDelegate.swift in Sources */,
+				5EA2835827906E0C00BC44BB /* BinaryModel.swift in Sources */,
 				5EA2833527906C9000BC44BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +403,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 75KSF446RQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bin2Dec/Info.plist;
+				INFOPLIST_FILE = Bin2Dec/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -419,7 +431,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 75KSF446RQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bin2Dec/Info.plist;
+				INFOPLIST_FILE = Bin2Dec/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
