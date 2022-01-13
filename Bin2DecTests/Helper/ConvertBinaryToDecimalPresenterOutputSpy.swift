@@ -12,8 +12,11 @@ class ConvertBinaryToDecimalPresenterOutputSpy: ConvertBinaryToDecimalPresenterO
     
     var presentDecimalCalled = false
     
+    var decimalExpectation = Int()
+    
     func displayDecimal(response decimal: Int) {
         presentDecimalCalled = true
+        decimalExpectation = decimal
     }
     
     func displayFailure(message: String) {

@@ -6,21 +6,21 @@
 //
 
 import XCTest
+@testable import Bin2Dec
 
 class ConvertBinaryToDecimalPresenterTests: XCTestCase {
 
     func test_whenPresentConvertingBinary_viewShouldShowDecimal() {
         
-        let sut = ConvertBinaryToDecimalPresenterInput()
-        let presenterOutputSpy = ConvertBinaryToDecimalPresenterOutputSpy()
-        let viewSpy = ConvertBinaryToDecimalViewSpy()
-        sut.view = viewSpy
-        sut.interactor.presenter = presenterOutputSpy
+        let sut = ConvertBinaryToDecimalPresenter()
+        let outputSpy = ConvertBinaryToDecimalPresenterOutputSpy()
+        sut.interactor = ConvertBinaryToDecimalInteractor()
+        sut.interactor?.presenter = outputSpy
         
-        sut.presentConvertBinaryToDecimal("1011")
+        sut.presentConvertBinaryToDecimal("11")
         
-        let result = presenterOutputSpy.viewController.decimal
-        let expectation = 11
-        XCTAssertEqual(result, 11)
+        let result = outputSpy.decimalExpectation
+        let expected = 3
+        XCTAssertEqual(result, expected)
     }
 }
