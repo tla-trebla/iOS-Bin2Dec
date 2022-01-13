@@ -56,15 +56,39 @@
 		5EA2833127906C9000BC44BB /* Bin2Dec */ = {
 			isa = PBXGroup;
 			children = (
-				5EA2833227906C9000BC44BB /* AppDelegate.swift */,
-				5EA2833427906C9000BC44BB /* SceneDelegate.swift */,
+				5EA2834727906CE600BC44BB /* Application */,
+				5EA2834627906CD600BC44BB /* View */,
+				5EA2834827906CF000BC44BB /* Other */,
+			);
+			path = Bin2Dec;
+			sourceTree = "<group>";
+		};
+		5EA2834627906CD600BC44BB /* View */ = {
+			isa = PBXGroup;
+			children = (
 				5EA2833627906C9000BC44BB /* ViewController.swift */,
 				5EA2833827906C9000BC44BB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EA2834727906CE600BC44BB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5EA2833227906C9000BC44BB /* AppDelegate.swift */,
+				5EA2833427906C9000BC44BB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5EA2834827906CF000BC44BB /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				5EA2833B27906C9200BC44BB /* Assets.xcassets */,
 				5EA2833D27906C9200BC44BB /* LaunchScreen.storyboard */,
 				5EA2834027906C9200BC44BB /* Info.plist */,
 			);
-			path = Bin2Dec;
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
