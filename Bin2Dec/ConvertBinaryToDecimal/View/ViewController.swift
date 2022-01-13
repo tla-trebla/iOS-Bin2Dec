@@ -11,12 +11,19 @@ class ViewController: UIViewController {
     
     var presenter: ConvertBinaryToDecimalPresenterInputProtocol?
     
+    // MARK: - IBOutlets
+    @IBOutlet weak var decimalResultLabel: UILabel!
+    @IBOutlet weak var numeralTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    // MARK: - IBActions
+    @IBAction func convertBinaryButtonPressed(_ sender: Any) {
+    }
+    
 }
 
 // MARK: - Presenter Output to View (Presenter -> View)
