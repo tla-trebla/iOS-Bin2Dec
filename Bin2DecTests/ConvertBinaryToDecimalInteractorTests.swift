@@ -18,7 +18,18 @@ class ConvertBinaryToDecimalInteractorTests: XCTestCase {
         
         sut.convertBinary("0")
         
-        XCTAssert(presenterSpy.presentDecimalCalled)
+        XCTAssertTrue(presenterSpy.presentDecimalCalled)
+    }
+    
+    func test_whenConvertIncorrectBinary_executePresenterFailureWithError() {
+        
+        let presenterSpy = ConvertBinaryToDecimalPresenterOutputSpy()
+        let sut = ConvertBinaryToDecimalInteractor()
+        sut.presenter = presenterSpy
+        
+        sut.convertBinary("2")
+        
+        XCTAssertFalse(presenterSpy.presentDecimalCalled)
     }
 
 }

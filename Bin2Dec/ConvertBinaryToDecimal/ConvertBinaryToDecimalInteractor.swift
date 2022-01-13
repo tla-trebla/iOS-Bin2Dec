@@ -19,6 +19,7 @@ class ConvertBinaryToDecimalInteractor: ConvertBinaryToDecimalInteractorProtocol
             try binary.updateNumeral(request)
         } catch {
             presenter?.presentFailure(message: error.localizedDescription)
+            return
         }
         
         presenter?.presentDecimal(response: binary.convertToDecimal())
