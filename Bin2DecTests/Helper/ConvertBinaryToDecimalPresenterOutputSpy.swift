@@ -12,11 +12,11 @@ class ConvertBinaryToDecimalPresenterOutputSpy: ConvertBinaryToDecimalPresenterO
     
     var presentDecimalCalled = false
     
-    func presentDecimal(response decimal: Int) {
+    func displayDecimal(response decimal: Int) {
         presentDecimalCalled = true
     }
     
-    func presentFailure(message: String) {
+    func displayFailure(message: String) {
         presentDecimalCalled = false
     }
 }
