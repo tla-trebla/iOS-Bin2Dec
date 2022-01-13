@@ -12,11 +12,13 @@ class ConvertBinaryToDecimalInteractorTests: XCTestCase {
 
     func test_whenConvertBinary_executePresenterSuccessWithDecimal() {
         
-        let sut = ConvertBinaryToDecimalInteractorProtocol(presenter: ConvertBinaryToDecimalPresenterOutputProtocol())
+        let presenterSpy = ConvertBinaryToDecimalPresenterOutputSpy()
+        let sut = ConvertBinaryToDecimalInteractor()
+        sut.presenter = presenterSpy
         
         sut.convertBinary("0")
         
-        XCTAssert(ConvertBinaryToDecimalPresenterOutputProtocol().presenterSuccessWithDecimal)
+        XCTAssert(presenterSpy.presentDecimalCalled)
     }
 
 }
