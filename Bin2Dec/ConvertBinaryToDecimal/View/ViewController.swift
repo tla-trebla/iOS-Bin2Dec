@@ -22,6 +22,10 @@ class ViewController: UIViewController {
 
     // MARK: - IBActions
     @IBAction func convertBinaryButtonPressed(_ sender: Any) {
+        guard let request = numeralTextField.text else {
+            return
+        }
+        presenter?.presentConvertBinaryToDecimal(request)
     }
     
 }
