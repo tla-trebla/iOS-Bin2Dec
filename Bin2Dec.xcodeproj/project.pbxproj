@@ -20,6 +20,7 @@
 		5EEF3F8227907D230031969D /* ConvertBinaryToDecimalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F8127907D230031969D /* ConvertBinaryToDecimalProtocols.swift */; };
 		5EEF3F85279081C90031969D /* ConvertBinaryToDecimalPresenterOutputSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F84279081C90031969D /* ConvertBinaryToDecimalPresenterOutputSpy.swift */; };
 		5EEF3F872790912D0031969D /* ConvertBinaryToDecimalPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F862790912D0031969D /* ConvertBinaryToDecimalPresenterTests.swift */; };
+		5EEF3F892790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F882790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5EEF3F8127907D230031969D /* ConvertBinaryToDecimalProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalProtocols.swift; sourceTree = "<group>"; };
 		5EEF3F84279081C90031969D /* ConvertBinaryToDecimalPresenterOutputSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalPresenterOutputSpy.swift; sourceTree = "<group>"; };
 		5EEF3F862790912D0031969D /* ConvertBinaryToDecimalPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalPresenterTests.swift; sourceTree = "<group>"; };
+		5EEF3F882790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				5EEF3F8127907D230031969D /* ConvertBinaryToDecimalProtocols.swift */,
 				5EEF3F7F27907D120031969D /* ConvertBinaryToDecimalInteractor.swift */,
+				5EEF3F882790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift */,
 			);
 			path = ConvertBinaryToDecimal;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				5EA2835827906E0C00BC44BB /* BinaryModel.swift in Sources */,
 				5EEF3F8027907D120031969D /* ConvertBinaryToDecimalInteractor.swift in Sources */,
 				5EA2833527906C9000BC44BB /* SceneDelegate.swift in Sources */,
+				5EEF3F892790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift in Sources */,
 				5EEF3F8227907D230031969D /* ConvertBinaryToDecimalProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
