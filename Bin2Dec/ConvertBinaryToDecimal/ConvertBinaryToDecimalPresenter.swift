@@ -18,3 +18,15 @@ class ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterInputProto
         interactor?.convertBinary(request)
     }
 }
+
+// MARK: - Presenter Output (Interactor -> Presenter)
+extension ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterOutputProtocol {
+    
+    func displayDecimal(response decimal: Int) {
+        view?.showDecimal(decimal: decimal)
+    }
+    
+    func displayFailure(message: String) {
+        view?.showError(message: message)
+    }
+}
