@@ -32,6 +32,9 @@ class BinaryModelTests: XCTestCase {
         XCTAssertThrowsError(try self.sut.updateNumeral("a")) { error in
             XCTAssertEqual(error as? BinaryError, BinaryError.invalidInput)
         }
+        XCTAssertThrowsError(try self.sut.updateNumeral("1010101010")) { error in
+            XCTAssertEqual(error as? BinaryError, BinaryError.inputTooLong)
+        }
     }
 
 }
