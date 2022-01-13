@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Bin2Dec
 
 class BinaryModelTests: XCTestCase {
 
@@ -14,6 +15,14 @@ class BinaryModelTests: XCTestCase {
         let sut = Binary()
         
         XCTAssertEqual(sut.convertToDecimal(), 0)
+    }
+    
+    func test_UpdateNumericValue_ShouldHaveCorrectDecimal() {
+        
+        let sut = Binary()
+        sut.updateNumeric(10)
+        
+        XCTAssertEqual(sut.convertToDecimal(), 2)
     }
 
 }
