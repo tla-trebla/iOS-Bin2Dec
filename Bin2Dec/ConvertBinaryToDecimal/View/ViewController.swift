@@ -34,10 +34,10 @@ class ViewController: UIViewController {
 extension ViewController: ConvertBinaryToDecimalViewProtocol {
     
     func showDecimal(decimal: Int) {
-        <#code#>
+        decimalResultLabel.text = String(decimal)
     }
     
     func showError(message: String) {
-        <#code#>
+        decimalResultLabel.text = message
     }
 }
