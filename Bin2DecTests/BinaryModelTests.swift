@@ -24,5 +24,13 @@ class BinaryModelTests: XCTestCase {
         
         XCTAssertEqual(sut.convertToDecimal(), 2)
     }
+    
+    func test_UpdateInvalidNumericValue_ShouldThrownError() {
+        
+        var sut = Binary()
+        XCTAssertThrowsError(sut.updateNumeric("2")) { error in
+            XCTAssertEqual(error as? BinaryError, BinaryError.invalidNumeric)
+        }
+    }
 
 }
