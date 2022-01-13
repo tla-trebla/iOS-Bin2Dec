@@ -9,27 +9,31 @@ import XCTest
 @testable import Bin2Dec
 
 class ConvertBinaryToDecimalInteractorTests: XCTestCase {
+    
+    var presenterSpy: ConvertBinaryToDecimalPresenterOutputSpy!
+    var sut: ConvertBinaryToDecimalInteractorProtocol!
+    
+    override func setUp() {
+        self.presenterSpy = ConvertBinaryToDecimalPresenterOutputSpy()
+        self.sut = ConvertBinaryToDecimalInteractor()
+    }
 
     func test_whenConvertBinary_executePresenterSuccessWithDecimal() {
         
-        let presenterSpy = ConvertBinaryToDecimalPresenterOutputSpy()
-        let sut = ConvertBinaryToDecimalInteractor()
-        sut.presenter = presenterSpy
+        self.sut.presenter = presenterSpy
         
-        sut.convertBinary("0")
+        self.sut.convertBinary("0")
         
-        XCTAssertTrue(presenterSpy.presentDecimalCalled)
+        XCTAssertTrue(self.presenterSpy.presentDecimalCalled)
     }
     
     func test_whenConvertIncorrectBinary_executePresenterFailureWithError() {
         
-        let presenterSpy = ConvertBinaryToDecimalPresenterOutputSpy()
-        let sut = ConvertBinaryToDecimalInteractor()
-        sut.presenter = presenterSpy
+        self.sut.presenter = presenterSpy
         
-        sut.convertBinary("2")
+        self.sut.convertBinary("2")
         
-        XCTAssertFalse(presenterSpy.presentDecimalCalled)
+        XCTAssertFalse(self.presenterSpy.presentDecimalCalled)
     }
 
 }
