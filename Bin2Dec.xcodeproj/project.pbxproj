@@ -16,6 +16,8 @@
 		5EA2835027906D2400BC44BB /* BinaryModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */; };
 		5EA2835827906E0C00BC44BB /* BinaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2835727906E0C00BC44BB /* BinaryModel.swift */; };
 		5EEF3F7D279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F7C279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift */; };
+		5EEF3F8027907D120031969D /* ConvertBinaryToDecimalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F7F27907D120031969D /* ConvertBinaryToDecimalInteractor.swift */; };
+		5EEF3F8227907D230031969D /* ConvertBinaryToDecimalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF3F8127907D230031969D /* ConvertBinaryToDecimalProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryModelTests.swift; sourceTree = "<group>"; };
 		5EA2835727906E0C00BC44BB /* BinaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryModel.swift; sourceTree = "<group>"; };
 		5EEF3F7C279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalInteractorTests.swift; sourceTree = "<group>"; };
+		5EEF3F7F27907D120031969D /* ConvertBinaryToDecimalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalInteractor.swift; sourceTree = "<group>"; };
+		5EEF3F8127907D230031969D /* ConvertBinaryToDecimalProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		5EA2833127906C9000BC44BB /* Bin2Dec */ = {
 			isa = PBXGroup;
 			children = (
+				5EEF3F7E27907CF90031969D /* ConvertBinaryToDecimal */,
 				5EA2835627906E0500BC44BB /* Entity */,
 				5EA2834727906CE600BC44BB /* Application */,
 				5EA2834627906CD600BC44BB /* View */,
@@ -133,6 +138,15 @@
 				5EA2835727906E0C00BC44BB /* BinaryModel.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		5EEF3F7E27907CF90031969D /* ConvertBinaryToDecimal */ = {
+			isa = PBXGroup;
+			children = (
+				5EEF3F8127907D230031969D /* ConvertBinaryToDecimalProtocols.swift */,
+				5EEF3F7F27907D120031969D /* ConvertBinaryToDecimalInteractor.swift */,
+			);
+			path = ConvertBinaryToDecimal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +253,9 @@
 				5EA2833727906C9000BC44BB /* ViewController.swift in Sources */,
 				5EA2833327906C9000BC44BB /* AppDelegate.swift in Sources */,
 				5EA2835827906E0C00BC44BB /* BinaryModel.swift in Sources */,
+				5EEF3F8027907D120031969D /* ConvertBinaryToDecimalInteractor.swift in Sources */,
 				5EA2833527906C9000BC44BB /* SceneDelegate.swift in Sources */,
+				5EEF3F8227907D230031969D /* ConvertBinaryToDecimalProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

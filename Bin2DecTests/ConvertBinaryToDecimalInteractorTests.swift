@@ -6,16 +6,17 @@
 //
 
 import XCTest
+@testable import Bin2Dec
 
 class ConvertBinaryToDecimalInteractorTests: XCTestCase {
 
     func test_whenConvertBinary_executePresenterSuccessWithDecimal() {
         
-        let sut = ConvertBinaryToDecimalInteractor(presenter: ConvertBinaryToDecimalPresenter())
+        let sut = ConvertBinaryToDecimalInteractor(presenter: ConvertBinaryToDecimalPresenterOutput())
         
         sut.convertBinary("0")
         
-        XCTAssert(ConvertBinaryToDecimalPresenter().presenterSuccessWithDecimal)
+        XCTAssert(ConvertBinaryToDecimalPresenterOutput().presenterSuccessWithDecimal)
     }
 
 }
