@@ -9,27 +9,28 @@ import XCTest
 @testable import Bin2Dec
 
 class BinaryModelTests: XCTestCase {
+    
+    var sut: Binary!
+    
+    override func setUp() {
+        sut = Binary()
+    }
 
     func test_InitializeBinary_ShouldHaveZeroDecimal() {
-        
-        let sut = Binary()
-        
-        XCTAssertEqual(sut.convertToDecimal(), 0)
+        XCTAssertEqual(self.sut.convertToDecimal(), 0)
     }
     
     func test_UpdateNumericValue_ShouldHaveCorrectDecimal() {
-        
-        var sut = Binary()
-        sut.updateNumeric("10")
-        
-        XCTAssertEqual(sut.convertToDecimal(), 2)
+        try? self.sut.updateNumeral("10")
+        XCTAssertEqual(self.sut.convertToDecimal(), 2)
     }
     
     func test_UpdateInvalidNumericValue_ShouldThrownError() {
-        
-        var sut = Binary()
-        XCTAssertThrowsError(sut.updateNumeric("2")) { error in
-            XCTAssertEqual(error as? BinaryError, BinaryError.invalidNumeric)
+        XCTAssertThrowsError(try self.sut.updateNumeral("2")) { error in
+            XCTAssertEqual(error as? BinaryError, BinaryError.invalidNumeral)
+        }
+        XCTAssertThrowsError(try self.sut.updateNumeral("a")) { error in
+            XCTAssertEqual(error as? BinaryError, BinaryError.invalidInput)
         }
     }
 
