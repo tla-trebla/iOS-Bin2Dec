@@ -95,7 +95,6 @@
 				5EEF3F7E27907CF90031969D /* ConvertBinaryToDecimal */,
 				5EA2835627906E0500BC44BB /* Entity */,
 				5EA2834727906CE600BC44BB /* Application */,
-				5EA2834627906CD600BC44BB /* View */,
 				5EA2834827906CF000BC44BB /* Other */,
 			);
 			path = Bin2Dec;
@@ -154,6 +153,7 @@
 				5EEF3F8127907D230031969D /* ConvertBinaryToDecimalProtocols.swift */,
 				5EEF3F7F27907D120031969D /* ConvertBinaryToDecimalInteractor.swift */,
 				5EEF3F882790A5CE0031969D /* ConvertBinaryToDecimalPresenter.swift */,
+				5EA2834627906CD600BC44BB /* View */,
 			);
 			path = ConvertBinaryToDecimal;
 			sourceTree = "<group>";
