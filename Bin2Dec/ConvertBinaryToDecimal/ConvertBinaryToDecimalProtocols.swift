@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol ConvertBinaryToDecimalPresenterOutput {
+protocol ConvertBinaryToDecimalPresenterOutputProtocol {
     func presentDecimal(response decimal: Int)
 }
 
-protocol ConvertBinaryToDecimalInteractor {
+protocol ConvertBinaryToDecimalInteractorProtocol {
     
-    var presenter: ConvertBinaryToDecimalPresenterOutput? { get set }
+    var presenter: ConvertBinaryToDecimalPresenterOutputProtocol? { get set }
     
     func convertBinary(_ request: String)
 }
