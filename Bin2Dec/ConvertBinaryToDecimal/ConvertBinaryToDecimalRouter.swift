@@ -12,10 +12,11 @@ class ConvertBinaryToDecimalRouter {
     
     func createModule() -> ViewController {
         
-        let view = ConvertBinaryToDecimalRouter
-            .mainStoryboard
-            .instantiateViewController(withIdentifier: "ViewController")
-        as! ViewController
+        var mainStoryboard: UIStoryboard {
+            return UIStoryboard(name: "Main", bundle: Bundle.main)
+        }
+        
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         
         let presenter = ConvertBinaryToDecimalPresenter()
         let interactor = ConvertBinaryToDecimalInteractor()
@@ -27,10 +28,6 @@ class ConvertBinaryToDecimalRouter {
         presenter.interactor = interactor
         interactor.presenter = presenter
         
-        return view
-    }
-    
-    static var mainStoryboard: UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
+        return viewController
     }
 }
