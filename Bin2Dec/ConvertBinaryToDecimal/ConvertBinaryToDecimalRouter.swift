@@ -20,13 +20,11 @@ class ConvertBinaryToDecimalRouter {
         
         let presenter = ConvertBinaryToDecimalPresenter()
         let interactor = ConvertBinaryToDecimalInteractor()
-        let router = ConvertBinaryToDecimalRouter()
         
-        view.presenter = presenter
-        presenter.view = view
-        presenter.router = router
         presenter.interactor = interactor
+        presenter.view = viewController
         interactor.presenter = presenter
+        viewController.presenter = presenter
         
         return viewController
     }
