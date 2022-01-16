@@ -9,7 +9,7 @@ import Foundation
 
 class ConvertBinaryToDecimalInteractor: ConvertBinaryToDecimalInteractorProtocol {
     
-    var presenter: ConvertBinaryToDecimalPresenterOutputProtocol?
+    var presenter: ConvertBinaryToDecimalPresenterOutput?
     
     private var binary = Binary()
     

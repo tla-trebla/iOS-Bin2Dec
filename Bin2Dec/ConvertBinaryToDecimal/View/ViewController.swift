@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var presenter: ConvertBinaryToDecimalPresenterInputProtocol?
+    var presenter: ConvertBinaryToDecimalPresenterInput?
     
     // MARK: - IBOutlets
     @IBOutlet weak var decimalResultLabel: UILabel!
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - Presenter Output to View (Presenter -> View)
-extension ViewController: ConvertBinaryToDecimalViewProtocol {
+extension ViewController: ConvertBinaryToDecimalView {
     
     func showDecimal(decimal: Int) {
         decimalResultLabel.text = String(decimal)

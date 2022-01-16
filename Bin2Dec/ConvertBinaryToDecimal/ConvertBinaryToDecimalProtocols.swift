@@ -7,32 +7,27 @@
 
 import Foundation
 
-protocol ConvertBinaryToDecimalPresenterInputProtocol {
+protocol ConvertBinaryToDecimalPresenterInput {
     
-    var view: ConvertBinaryToDecimalViewProtocol? { get set }
+    var view: ConvertBinaryToDecimalView? { get set }
     var interactor: ConvertBinaryToDecimalInteractorProtocol? { get set }
-    var router: ConvertBinaryToDecimalRouterProtocol? { get set }
     
     func presentConvertBinaryToDecimal(_ request: String)
 }
 
-protocol ConvertBinaryToDecimalViewProtocol {
+protocol ConvertBinaryToDecimalView {
     func showDecimal(decimal: Int)
     func showError(message: String)
 }
 
-protocol ConvertBinaryToDecimalRouterProtocol {
-    func createModule() -> ViewController
-}
-
-protocol ConvertBinaryToDecimalPresenterOutputProtocol {
+protocol ConvertBinaryToDecimalPresenterOutput {
     func displayDecimal(response decimal: Int)
     func displayFailure(message: String)
 }
 
 protocol ConvertBinaryToDecimalInteractorProtocol {
     
-    var presenter: ConvertBinaryToDecimalPresenterOutputProtocol? { get set }
+    var presenter: ConvertBinaryToDecimalPresenterOutput? { get set }
     
     func convertBinary(_ request: String)
 }

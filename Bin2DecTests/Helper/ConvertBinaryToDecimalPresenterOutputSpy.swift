@@ -8,7 +8,7 @@
 import Foundation
 @testable import Bin2Dec
 
-class ConvertBinaryToDecimalPresenterOutputSpy: ConvertBinaryToDecimalPresenterOutputProtocol {
+class ConvertBinaryToDecimalPresenterOutputSpy: ConvertBinaryToDecimalPresenterOutput {
     
     var presentDecimalCalled = false
     

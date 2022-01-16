@@ -8,11 +8,10 @@
 import Foundation
 
 // MARK: - Presenter Input (View -> Presenter)
-class ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterInputProtocol {
+class ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterInput {
     
-    var view: ConvertBinaryToDecimalViewProtocol?
+    var view: ConvertBinaryToDecimalView?
     var interactor: ConvertBinaryToDecimalInteractorProtocol?
-    var router: ConvertBinaryToDecimalRouterProtocol?
     
     func presentConvertBinaryToDecimal(_ request: String) {
         interactor?.convertBinary(request)
@@ -20,7 +19,7 @@ class ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterInputProto
 }
 
 // MARK: - Presenter Output (Interactor -> Presenter)
-extension ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterOutputProtocol {
+extension ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterOutput {
     
     func displayDecimal(response decimal: Int) {
         view?.showDecimal(decimal: decimal)

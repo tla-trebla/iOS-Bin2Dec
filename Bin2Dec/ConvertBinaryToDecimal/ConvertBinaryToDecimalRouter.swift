@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ConvertBinaryToDecimalRouter: ConvertBinaryToDecimalRouterProtocol {
+class ConvertBinaryToDecimalRouter {
     
     func createModule() -> ViewController {
         
