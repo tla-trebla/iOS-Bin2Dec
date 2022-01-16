@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E28286227918117004942C9 /* ConvertBinaryToDecimalRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28286127918117004942C9 /* ConvertBinaryToDecimalRouterTests.swift */; };
 		5E7903D22790B8180096D91F /* ConvertBinaryToDecimalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7903D12790B8180096D91F /* ConvertBinaryToDecimalRouter.swift */; };
 		5EA2833327906C9000BC44BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2833227906C9000BC44BB /* AppDelegate.swift */; };
 		5EA2833527906C9000BC44BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2833427906C9000BC44BB /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E28286127918117004942C9 /* ConvertBinaryToDecimalRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalRouterTests.swift; sourceTree = "<group>"; };
 		5E7903D12790B8180096D91F /* ConvertBinaryToDecimalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBinaryToDecimalRouter.swift; sourceTree = "<group>"; };
 		5EA2832F27906C9000BC44BB /* Bin2Dec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bin2Dec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA2833227906C9000BC44BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				5EA2834F27906D2400BC44BB /* BinaryModelTests.swift */,
 				5EEF3F7C279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift */,
 				5EEF3F862790912D0031969D /* ConvertBinaryToDecimalPresenterTests.swift */,
+				5E28286127918117004942C9 /* ConvertBinaryToDecimalRouterTests.swift */,
 			);
 			path = Bin2DecTests;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEF3F7D279079920031969D /* ConvertBinaryToDecimalInteractorTests.swift in Sources */,
+				5E28286227918117004942C9 /* ConvertBinaryToDecimalRouterTests.swift in Sources */,
 				5EEF3F872790912D0031969D /* ConvertBinaryToDecimalPresenterTests.swift in Sources */,
 				5EA2835027906D2400BC44BB /* BinaryModelTests.swift in Sources */,
 				5EEF3F85279081C90031969D /* ConvertBinaryToDecimalPresenterOutputSpy.swift in Sources */,
