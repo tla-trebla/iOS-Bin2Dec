@@ -5,8 +5,6 @@
 //  Created by Albert Pangestu on 13/01/22.
 //
 
-import Foundation
-
 enum BinaryError: Error {
     case invalidNumeral
     case invalidInput

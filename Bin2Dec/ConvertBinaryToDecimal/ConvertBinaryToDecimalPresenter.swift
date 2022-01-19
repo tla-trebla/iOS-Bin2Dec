@@ -5,8 +5,6 @@
 //  Created by Albert Pangestu on 14/01/22.
 //
 
-import Foundation
-
 // MARK: - Presenter Input (View -> Presenter)
 class ConvertBinaryToDecimalPresenter: ConvertBinaryToDecimalPresenterInput {
     
